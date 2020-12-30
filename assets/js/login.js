@@ -51,11 +51,11 @@ $(function() {
                 }
                 layer.msg('登录成功！')
                     // console.log('成功')
-                console.log(res.loken);
+                console.log(res.token);
                 // 将登录成功得到的token字符串保存到本地
-                localStorage.setItem('token', res.loken)
+                localStorage.setItem('token', res.token)
                     // 跳转页面
-                location.href = '/login.html'
+                location.href = '/index.html'
             }
         })
         return false
